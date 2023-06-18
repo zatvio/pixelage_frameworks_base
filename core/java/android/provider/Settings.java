@@ -6512,6 +6512,13 @@ public final class Settings {
         public static final String QS_FOOTER_DATA_USAGE = "qs_footer_data_usage";
 
         /**
+         * Whether to scramble a pin unlock layout
+         * 0 = 0ff, 1 = on
+         * @hide
+         */
+        public static final String LOCKSCREEN_PIN_SCRAMBLE_LAYOUT = "lockscreen_scramble_pin_layout";
+
+        /**
          * GameSpace: List of added games by user
          * @hide
          */
