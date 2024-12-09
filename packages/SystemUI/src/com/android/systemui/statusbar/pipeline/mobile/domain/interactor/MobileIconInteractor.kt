@@ -389,10 +389,10 @@ class MobileIconInteractorImpl(
         combine(defaultSubscriptionHasDataEnabled, isDefaultConnectionFailed, isInService, shouldShowExclamationMark) {
                 isDefaultDataEnabled,
                 isDefaultConnectionFailed,
-                isInService, 
+                isInService,
                 shouldShowExclamationMark ->
-                !isDefaultDataEnabled || isDefaultConnectionFailed ||
-                !isInService && shouldShowExclamationMark
+                (!isDefaultDataEnabled || isDefaultConnectionFailed ||
+                !isInService) && shouldShowExclamationMark
             }
             .stateIn(scope, SharingStarted.WhileSubscribed(), true)
 
